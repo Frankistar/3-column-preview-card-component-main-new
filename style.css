@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 920px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+}
+
+section {
+    padding: 50px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+}
+
+section h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display", sans-serif;
+    width: fit-content;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 38px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 270px;
+}
+
+article p {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+button {
+    border: none;
+    width: 70%;
+    height: 50px;
+    border-radius: 30px;
+    position: relative;
+    bottom: -20%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button h6 {
+    font-size: 13px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+}
+
+section:first-child {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+section:first-child button {
+    color: hsl(31, 77%, 52%);
+}
+
+section:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+section:nth-child(2) button {
+    color: hsl(184, 100%, 22%);
+}
+
+section:last-child {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+section:last-child button {
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width:430px) {
+    body {
+        height: auto;
+        align-items: initial;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 325px;
+        height: auto;
+        margin: 90px 0;
+    }
+
+    article {
+        margin-bottom: 35px;
+    }
+
+    button {
+        position: initial;
+    }
+
+    section:first-child {
+        border-radius: 10px 10px 0 0;
+    }
+
+    section:last-child {
+        border-radius: 0 0 10px 10px;
+    }
+}
